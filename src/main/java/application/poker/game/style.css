@@ -1,0 +1,19 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+.myButton{
+
+    -fx-width: 100;
+    -fx-min-width: -fx-width;
+    -fx-max-width: -fx-width;
+
+    -fx-height: 100;
+    -fx-min-height: -fx-height;
+    -fx-max-height: -fx-height;
+
+    -fx-cursor: hand;
+
+}
+
+
+

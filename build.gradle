@@ -1,0 +1,74 @@
+plugins {
+    id 'java'
+    id 'org.openjfx.javafxplugin' version '0.0.9'
+
+    //we have to tell gradle that i'm using an application so that I can specify the main class name later
+    id 'application'
+    //id 'org.beryx.jlink' version '2.23.6'
+}
+
+
+
+group 'application.poker.game'
+version '1.0-SNAPSHOT'
+
+//sourceCompatibility = 1.8
+sourceCompatibility = 11
+
+repositories {
+    mavenCentral()
+}
+
+//application{
+    //mainClassName = 'application.poker.game.Main'
+    //mainModule.set("application.poker.game")
+
+//}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+javafx {
+    mainClassName = 'application.poker.game.Main'
+    //version = "11.0.2"
+    version = "16"
+    modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.graphics', 'javafx.media', 'javafx.swing', 'javafx.web']
+}
+
+//sourceSets {
+//    main {
+//        java {
+//            //srcDirs = ["src/main/java/application"]
+//            //includes = ["**/*.css"]
+//            //include 'application'
+//            //include {'application/applicationZ.css'}
+//        }
+//    }
+//}
+
+//task customFatJar(type: Jar){
+//    manifest{
+//        attributes 'Main-Class': 'application.poker.game.Main'
+//    }
+//}
+
+
+//sourceSets {
+//    main {
+//        java {
+//            srcDir 'main'
+//            include 'Main.java'
+//        }
+//        resources {
+//            srcDir 'resources'
+//            include 'myCards'
+//        }
+//    }
+//    test {
+//        java {
+//            srcDir 'test'
+//            //resources
+//        }
+//    }
+//}
