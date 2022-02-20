@@ -10,7 +10,7 @@ plugins {
 
 
 group 'application.poker.game'
-version '1.0-SNAPSHOT'
+version '1.0'
 
 //sourceCompatibility = 1.8
 sourceCompatibility = 11
@@ -25,15 +25,21 @@ repositories {
 
 //}
 
-dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+//dependencies {
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+//}
 
 javafx {
     mainClassName = 'application.poker.game.Main'
     //version = "11.0.2"
     version = "16"
     modules = [ 'javafx.controls', 'javafx.fxml', 'javafx.base', 'javafx.graphics', 'javafx.media', 'javafx.swing', 'javafx.web']
+}
+
+jar {
+    manifest {
+        attributes('Main-Class': 'application.poker.game.Main')
+    }
 }
 
 //sourceSets {
