@@ -4,7 +4,7 @@ The game is highly scalable and perfectly object oriented. To give a brief overv
 The game is still not complete, the game now is running without any user interaction other the the two buttons **Run** and **Result**.
 
 ## How to Run
-Follow this [link](https://openjfx.io/openjfx-docs/#gradle) after you clone the repo, gradlew is for Mac and Linux users and gradlew.bat is for windows users. Make sure to ``` gradlew build ``` first then ``` gradlew run ``` <br>
+Follow this [link](https://openjfx.io/openjfx-docs/#gradle) after forking the repo, gradlew is for Mac and Linux users and gradlew.bat is for windows users. Make sure to ``` gradlew build ``` first then ``` gradlew run ``` <br>
 ## Images of the three states of the game:
 
 ![](src/main/resources/rdme_image1.png)
